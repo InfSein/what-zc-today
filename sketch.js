@@ -20,14 +20,6 @@ function myTimer() {
 
 let remainder = days(date_1, date_2)%4;
 
-console.log(
-  'date1:', date_1,
-  'date2:', date_2,
-  'difference:', date_2.getTime() - date_1.getTime(),
-  'days:', days(date_1, date_2),
-  'remainder:', remainder
-)
-
 const img = [];
 img[0]='./assets/cf.png';
 img[1]='./assets/sb.png';
@@ -39,7 +31,7 @@ function calculate(){
         document.title="今天什么战场？尘封", 
         document.getElementById("mainImage").src = img[0],
         document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是尘封啦！",
-        document.getElementById("zcrotation").innerHTML = "碎冰>草原>阵地<b>尘封</b>"};
+        document.getElementById("zcrotation").innerHTML = "碎冰>草原>阵地><b>尘封</b>"};
     if (remainder == 1){
         document.title="今天什么战场？碎冰", 
         document.getElementById("mainImage").src = img[1],
