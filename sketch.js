@@ -20,6 +20,14 @@ function myTimer() {
 
 let remainder = days(date_1, date_2)%4;
 
+console.log(
+  'date1:', date_1,
+  'date2:', date_2,
+  'difference:', date_2.getTime() - date_1.getTime(),
+  'days:', days(date_1, date_2),
+  'remainder:', remainder
+)
+
 const img = [];
 img[0]='./assets/cf.png';
 img[1]='./assets/sb.png';
